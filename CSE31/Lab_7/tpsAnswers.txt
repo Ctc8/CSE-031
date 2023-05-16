@@ -1,0 +1,29 @@
+TPS 1:
+1. A procedure is a routine that can accept arguments but does not return any values. A function is a routine that can accept arguments and returns one or more values. A method in OOP is a programmed procedure that is defined as part of a class and is available to any object instantiated from that class.
+
+2. ...
+
+3. ...
+
+4. Line 20, addition with overflow adds values of m and n and stores result in $v0.
+
+5. The target for jr comes from a register specified in the instruction. So, no. 
+
+6. The value of the return address is being saved in line 11 in $ra. The value being stored is 0. It doesn't make much sense because it looks like the constant zero is being stored in this register. 
+
+7. Error in : invalid program counter value: 0x00000000
+Go: execution termination with errors
+
+8. 0x00400030
+9. Return address is correct
+10. 15
+11. jal
+12. 
+
+TPS 2:
+1. 38
+2. There is an infinite loop
+3. Too many function calls lost track of the address
+4. ...
+5. The value of m is replacing $s0 as seen in line 29 with lw instruction
+6. ...

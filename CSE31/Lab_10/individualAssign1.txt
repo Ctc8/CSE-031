@@ -1,0 +1,13 @@
+1. 3 (L1 Data, L1 Instruction, L2 Unified) Yes, there is a separate L1 cache for data and instructions.
+2.  L1 Data: 128KB
+    L1 Instruction: 128KB
+    L2 Unified: 8MB
+3. 64B
+4. Direct-mapped
+5.  Offset bits: 6B
+    Index bits: 8B
+    Tag bits: 50B
+
+    Offset bits = log2(block size)
+    Index bits = log2(number of sets)
+    Tag bits: Total address bits - Index bits - Offset bits

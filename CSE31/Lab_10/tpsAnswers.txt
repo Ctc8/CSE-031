@@ -1,0 +1,50 @@
+TPS Activity 1:
+1. Cache is a memory component between the CPU and main memory. We need cache in order to store copies of frequently accessed data so the CPU can access them quicker. Accessing data in the main memory is much slower compared to accessing them from the cache. 
+2. ...
+3. ...
+4. For a block size of a cache that is 16B, we need 4 bits for offset since 2^4 = 16. log2(blockSize). It is not practical because why would you need to have 4 bytes of data to store 1 byte.
+5. We will need 6 bits since 2^6 = 64. log2(blocks)
+6. Yes, given both the number of blocks and block size of a cache, you can determine the total size of the cache by multiplying the # of blocks with the # of bytes.
+7. The leftover bits from the address are used to select the tag for a cache block.
+8.  (a) 2^20 = 1048576 possible memory locations
+    (b) 2^3 = 8 so 3 bits for the offset
+    (c) Number of blocks in cache: cache size/block size = 128/8 = 16
+    (d) 128/8 = 16, Number of index bits: log2(16) = 4 index bits
+    (e) Number of tag bits: address bits - offset bits - index bits = 20 - 3 - 4 = 13 bits
+    (f) | Tag (13 bits) | Index (4 bits) | Offset (3 bits) |
+        ----------------------------------------------------
+        | Valid bit     | Dirty bit      |  Data block     |
+        ----------------------------------------------------
+        | Valid bit     | Dirty bit      |  Data block     |
+        ----------------------------------------------------
+    (g) Offset bits = 3 bits
+        Index bits = 4 bits
+        Tag bits = 13 bits
+        Valid bit: 1 bit
+        Dirty bit: 1 bit
+        Data block: 8 bytes = 64 bits
+        13 + 1 + 1 + 64 = 79 bits
+
+TPS Activity 2:
+1. The disadvantage is that it can have high conflict misses. Conflict misses happen when multiple memory blocks are mapped to the same cache index causing the memory blocks to compete for space.
+2. ...
+3.  1024 blocks / 4 associativity = 256 sets
+    log2(256) = 8 index bits
+4.  (a) 2^20 = 1048576
+    (b) 2^3 = 8 so 3 bits for the offset
+    (c) Number of blocks in cache: cache size/block size = 128/8 = 16
+    (d) Number of sets: cache size /(blockSize * blocks per set) = 128/(8 * 2) = 8
+    (e) 64 = (16) / (2 x 2^indexBits)
+        2^indexBits = 16 / (2 x 64)
+        2^indexBits = 1/8
+        indexBits = log2(1/8)
+        indexBits = 3 
+    (f) Number of tag bits: address bits - offset bits - index bits = 20 - 3 - 3 = 14 bits
+    (g) ...
+    (h) Offset bits = 3 bits
+        Index bits = 3 bits
+        Tag bits = 14 bits
+        Valid bit: 1 bit
+        Dirty bit: 1 bit
+        Data block: 8 bytes = 64 bits
+        14 + 1 + 1 + 64 = 80

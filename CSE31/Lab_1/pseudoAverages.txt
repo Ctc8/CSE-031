@@ -1,0 +1,42 @@
+// Discussed pseudocode with Purab Mecwan, Jaden Yang
+
+int main(){
+
+    Get user to input a number
+    End while loop when 0 is entered
+
+    Function to get the "digit sum" of the numbers
+    int sumOfDigits(int n){
+        int sum = 0;
+        while (n != 0){
+            sum = sum + n % 10;
+            n = n / 10;
+        }
+        return sum;
+    }
+
+    // Check if sum is even or odd
+    if (sum % 2 == 0){
+        count1 = 0;
+        int totalEven = 0;
+
+        totalEven = totalEven + sum;
+        Increment counter based on number of even numbers
+    }
+    
+    else {
+        count2 = 0;
+        int totalOdd = 0;
+
+        totalOdd = totalOdd + sum;
+        Increment counter based on number of odd numbers
+    }
+}
+
+
+1, Get user to input number in a while loop
+2. Determine if the digit sum of the number is even or odd (make function)
+3. If the digit sum is even then add it to a total of EVEN sum
+4. If the digit sum is odd then add it to a total of ODD sum
+5. Keep track of ordinal numbering with use of remainders/modulo operator
+6. If the user inputs 0, end the program and print the averages of odd and even digit sums

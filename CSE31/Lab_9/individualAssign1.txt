@@ -1,0 +1,98 @@
+Line 7:
+*MIPS -> Machine Code*
+addi $s0, $zero, -15: I-format
+
+addi: opcode = 8
+      rs = 0
+      rt = 16
+      imm = 15
+
+Decimal values: 8 0 16 -15
+Binary Conversion: 001000 00000 10000 1111 1111 1111 0001
+Hex Conversion: 2 0 1 0 F F F 1 = 0x2010FFF1
+
+*Machine Code -> MIPS*
+Binary Conversion: 0010 0000 0001 0000 1111 1111 1111 0001
+I-format
+6 bits	5 bits	5 bits	16 bits
+001000 00000 10000 1111111111110001
+addi $s0, $zero, -15
+
+
+
+
+
+Line 14:
+*MIPS -> Machine Code*
+slt $t0, $s0, $s1: R-format
+
+slt: opcode = 0
+     rs = ($s0) = 16 = 10000
+     rt = ($s1) = 17 = 10001
+     rd = ($t0) = 8 = 01000
+     shamt = 00000
+     funct = 101011
+
+Binary Conversion: 000000 10000 10001 01000 00000 101011
+Hex Conversion: 0 2 1 1 4 0 2 a = 0x0211402a
+
+*Machine Code -> MIPS*
+Binary Conversion: 000000 10000 10001 01000 00000 101011
+R-format
+000000 10000 10001 01000 00000 101011
+   0	16    17     8	 shamt	funct
+slt $8, $16, $17
+slt $t0, $s0, $s1
+
+
+
+
+
+Line 17:
+*MIPS -> Machine Code*
+beq $t0, $zero, LEEQ: I-format
+
+beq: opcode = 4
+     rs = 8
+     rt = 0
+     imm = 6
+
+Decimal values: 4 8 0 6
+Binary Conversion: 0001 0001 0000 0000 0000 0000 0000 0110
+Hex Conversion: 0x11000006
+
+*Machine Code -> MIPS*
+Binary Conversion: 000100 01000 00000 0000000000000110
+I-format
+000100 01000 00000 0000000000000110
+  4      8     0           6
+beq $t0, $zero, LEEQ
+
+
+
+
+
+Line 20:
+*MIPS -> Machine Code*
+j GRT
+
+j: opcode = 2 
+   address = 0x0040001c
+   
+Binary Conversion: 0000 1000 0001 0000 0000 0000 0000 0111
+Hex Conversion: 0x08100007
+
+*Machine Code -> MIPS*
+Binary Conversion: 0000 1000 0001 0000 0000 0000 0000 0111
+J-format
+Address: 000010 0000 0100 0000 0000 0000 0001 11
+Address conversion: 0000 0000 0100 0000 0000 0000 0001 1100
+j GRT
+
+
+
+
+
+
+
+

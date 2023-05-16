@@ -1,0 +1,53 @@
+TPS 1:
+1. ...
+2. ...
+3. ...
+4. 32 bits
+5. There are three types. 
+    R-format instructions:
+    (1) add
+    (2) sub
+
+    I-format instructions:
+    (1) addi
+    (2) lw
+
+    J-format instructions:
+    (1) j
+    (2) jal
+
+6.  (a) I-format instruction since it is adding an immediate. 
+    (b) opcode in hex: 8
+        register of rs: $zero (0x0)
+        register of rt: $s0 (0x10)
+        Immediate: 0x19
+    (c) Bin: 001000 00000 10000 0000000000011001
+        Hex: 0x20100019
+
+7.  (a) 000000 10001 10000 01000 00000 101010
+        Machine code: 0x00230402a
+    (b) R-format because slt is in R-format according to the calling conventions
+    (c) op: 0x0
+        rs: 0x11
+        rt: 0x10
+        rd: 0x8
+        shamt: 0x0
+        funct: 0x2a
+    (d) slt
+    (e) slt $t0, $s1. $s0
+
+8.  (a) I-format
+    (b) opcode: 0x5
+        rs: 0x8
+        rt: 0x0
+    (c) LESS, 0x0040001c
+    (d) No
+    (e) 20
+    (f) 000101 01000 00000 0000000000010100 and 0x15000014 
+        They do not match.
+
+9.  (a) J-format
+    (b) 0x2
+    (c) GREQ: 0x00400030
+    (d) 26 bits to store 32 bit address
+    (e) They're the same. 0000 1000 0001 0000 0000 0000 0000 1100 and 0x0810000c.

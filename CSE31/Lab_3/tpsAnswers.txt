@@ -1,0 +1,19 @@
+TPS 1:
+1.  Static storage: global variable storage, basically permanent, entire program run
+    Stack: local variable storage, parameters, return address
+    Heap: (dynamic malloc storage), data lives until deallocated by programmer
+2.  a) 3 variables are declared
+    b) 2 are pointers, both of type int
+    c)  int num: Stack
+        int *ptr: Stack, the values of these pointers are on the heap
+        int **handle: Stack, the values of these pointers are on the heap
+    d)  Heap, since memory is being allocated
+3.  ...
+4.  ...
+
+TPS 2:
+1.  Construction of a linked list with 3 nodes with a node pointer pointing to the next node. 
+2.  ...
+3.  The struct is allocated on the stack. However, the head* is allocated on the heap because of the use of malloc().
+
+

@@ -1,0 +1,24 @@
+TPS 1:
+1. MARS = MIPS Assembler and Runtime Simulator
+2. ...
+3. ...
+4. ...
+5. 	a) File -> Open folder
+	b) Run -> Assemble
+	c) Run -> Go/Step
+	d) You can't run before you assemble.
+	e) Run -> Step
+	f) Assemble and execute/run again
+6. ...
+
+TPS 2:
+1. 	.data: 	A data definition statement sets aside storage in memory for a variable, with an 		optional name.
+	.word: 	Used to allocate and initialize space for a variable.
+	.text: 	Tells the assembler to switch to the text segment (where code goes).
+2. Branch if equal: Branch to statement at label's address if $t3 and $0 are equal.
+3. Jump unconditionally: Jump to statement at target address which is fib.
+4. Click the execute tab then on line 15, check the "bkpt" box.
+5. Click on the run step.
+6. Under "registers" you can edit it in yourself.
+7. n: 0x10010000
+8. Issue a system call: Execute the system call specified by value in $v0

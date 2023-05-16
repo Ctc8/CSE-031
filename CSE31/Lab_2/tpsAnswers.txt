@@ -1,0 +1,32 @@
+TPS 1:
+    1. Collin Chuang, Purab Mecwan, Ethan 
+
+    2. 
+    https://lldb.llvm.org/use/tutorial.html
+    https://www.classes.cs.uchicago.edu/archive/2017/winter/15200-2/assigns/week5/lldb.html
+    https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-terminal-workflow-tutorial.html
+ 
+    3. ...
+    4. ...
+
+TPS 2: 
+    1. gcc -g punishment.c -o punish
+    2. lldb punish
+    3. r / run
+    4.  A breakpoint stops the debugger up to a certain point in your code. 
+        Command: breakpoint set --file punishment.c --line 38
+    5. n / next
+    6. print [VARIABLE NAME]
+    7. continue
+    8. quit
+
+TPS 3:
+    1. 4 variables, 2 pointers (*px and *py)
+    2. x: 147712, y: 0, arr[0] = 147712. I think this happens because no values were assigned to the variables so it prints out garbage memory. 
+    3. Assign them a value in order to prevent printing out random values.
+    4. Used "&" operator to get address.
+    5. ...
+    6. ...
+    7. ...
+    8. It prints the address of the arr.
+

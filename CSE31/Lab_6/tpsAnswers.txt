@@ -1,0 +1,31 @@
+TPS 1:
+1. Text Segment: 0x00400000
+   Data Segment: 0x10010000
+
+2. Source code seems to be exactly what the original code was. The basic instructions look like a simplified version of the source code.
+
+3. 20 bytes for Data Segment
+
+4. 8
+5. Values increment by 4 bits
+6. m:	.word 20
+7. 0x10010004
+8. str1: .asciiz "I love CSE31!"
+9. 0x10010008, 0x1001000c, 0x10010010
+10. Yes
+
+11. la     $a0, str1
+    li      $v0, 4
+    syscall
+
+12. It will load the address of n into $t3.
+
+TPS 2:
+1. Less instructions = fast run time
+2. ...
+3. ...
+4. ...
+5. ...
+6. ...
+7. ...
+8. ...

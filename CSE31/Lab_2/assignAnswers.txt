@@ -1,0 +1,10 @@
+Assignment 1:
+1. Line 23
+2. Retrieve address of input using & operator.
+3. Sum is not being dereferenced. The memory is being lost so the sum is constantly being divided by 0 which always results in 0.
+4. Add a dereference operator * to sum.
+
+Assignment 2:
+1. The output is expected.
+2. The output is not expected. The result included the previous "hello!" string.
+3. The output is not expected. The first string is not included at all. I think this may have happened due to an overflow of elements inside of the allocated space for the array.

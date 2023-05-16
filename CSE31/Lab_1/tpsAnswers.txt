@@ -1,0 +1,29 @@
+TPS 1:
+1. Collin Chuang, Purab Mecwan, Jaden Yang
+2. 	https://support.system76.com/articles/terminal-basics/
+	https://www.comptia.org/blog/applying-your-linux-skills-to-macos-terminal-bash-and-common-commands
+	https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners
+3. ...Done
+4. ...Done
+
+TPS 2:
+1. 	a) Yes, you can open multiple terminals at the same time.
+	b) To compare the results of multiple files.
+2. ls
+3. cd Desktop
+4. mkdir CSE31
+
+TPS 3:
+1. 	https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/
+	https://www.linuxtopia.org/online_books/an_introduction_to_gcc/gccintro_73.html
+2. 
+3. gcc main.c
+4. The terminal outputs no errors.
+5. It creates an object file. (.o)
+6. Generates debugging and created an a.out.dSYM file.
+7. mv main.c cselab1.c
+8. Compiles the file/creates an executable.
+9. ./a.out
+
+TPS 4:
+*On separate file named pesudoAverages.txt*
