@@ -1,2 +1,1 @@
-# CSE-031-Labs
-# CSE-031
+# Labs and Projects from CSE 031
