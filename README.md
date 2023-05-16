@@ -1,1 +1,1 @@
-Labs and Projects from CSE 031
+Labs and Projects from Computer Org. & Assembly Language
